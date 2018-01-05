@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="KGk-i7-Jjw" customClass="MessageDetailResponseTableViewCell" customModule="Corner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iQ8-RW-5Kd">
+                        <rect key="frame" x="18" y="8" width="50" height="50"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="qx5-xI-fdl"/>
+                            <constraint firstAttribute="height" constant="50" id="sOl-9y-BMn"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kHI-0D-4jh">
+                        <rect key="frame" x="7" y="30.5" width="5" height="5"/>
+                        <color key="backgroundColor" red="0.3294117647" green="0.78039215689999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="XgY-uZ-aTl"/>
+                            <constraint firstAttribute="height" constant="5" id="b9c-ju-o5z"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Seller Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgU-gq-4gb">
+                        <rect key="frame" x="74" y="8" width="164" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Shop Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l36-hl-ltL">
+                        <rect key="frame" x="74" y="23" width="226" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30/11/2016" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiM-gn-EhO">
+                        <rect key="frame" x="258" y="8" width="54" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Response from shop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NE2-7u-ODH">
+                        <rect key="frame" x="74" y="43.5" width="206" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NE2-7u-ODH" firstAttribute="leading" secondItem="IgU-gq-4gb" secondAttribute="leading" id="4R3-aB-9Gy"/>
+                    <constraint firstItem="kHI-0D-4jh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9UQ-2V-cLl"/>
+                    <constraint firstItem="IgU-gq-4gb" firstAttribute="top" secondItem="iQ8-RW-5Kd" secondAttribute="top" id="BfS-JO-8w9"/>
+                    <constraint firstItem="XiM-gn-EhO" firstAttribute="leading" secondItem="IgU-gq-4gb" secondAttribute="trailing" constant="20" id="OLw-4Y-Vrf"/>
+                    <constraint firstAttribute="trailing" secondItem="XiM-gn-EhO" secondAttribute="trailing" constant="8" id="PuR-yE-FcX"/>
+                    <constraint firstAttribute="trailing" secondItem="l36-hl-ltL" secondAttribute="trailing" constant="20" id="WKz-gg-mAg"/>
+                    <constraint firstItem="IgU-gq-4gb" firstAttribute="leading" secondItem="iQ8-RW-5Kd" secondAttribute="trailing" constant="6" id="ZA3-DO-Bln"/>
+                    <constraint firstItem="NE2-7u-ODH" firstAttribute="bottom" secondItem="iQ8-RW-5Kd" secondAttribute="bottom" id="dM6-7t-lJI"/>
+                    <constraint firstAttribute="trailing" secondItem="NE2-7u-ODH" secondAttribute="trailing" constant="40" id="eem-MQ-3s9"/>
+                    <constraint firstItem="l36-hl-ltL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hfM-el-Woe"/>
+                    <constraint firstItem="iQ8-RW-5Kd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="kIa-VJ-vP2"/>
+                    <constraint firstItem="iQ8-RW-5Kd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lci-cj-bmK"/>
+                    <constraint firstItem="l36-hl-ltL" firstAttribute="leading" secondItem="IgU-gq-4gb" secondAttribute="leading" id="o6T-bI-kaF"/>
+                    <constraint firstItem="iQ8-RW-5Kd" firstAttribute="leading" secondItem="kHI-0D-4jh" secondAttribute="trailing" constant="6" id="vd4-BU-qfQ"/>
+                    <constraint firstItem="XiM-gn-EhO" firstAttribute="top" secondItem="iQ8-RW-5Kd" secondAttribute="top" id="zP5-yl-hRc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgShop" destination="iQ8-RW-5Kd" id="Bby-Pk-bZN"/>
+                <outlet property="imgUnread" destination="kHI-0D-4jh" id="NqH-3p-0up"/>
+                <outlet property="lblDate" destination="XiM-gn-EhO" id="EMI-zy-ZuB"/>
+                <outlet property="lblResponseMessage" destination="NE2-7u-ODH" id="aMj-25-Hj1"/>
+                <outlet property="lblSellerName" destination="IgU-gq-4gb" id="vmI-an-E9N"/>
+                <outlet property="lblShopName" destination="l36-hl-ltL" id="b2h-vB-pdt"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="61"/>
+        </tableViewCell>
+    </objects>
+</document>

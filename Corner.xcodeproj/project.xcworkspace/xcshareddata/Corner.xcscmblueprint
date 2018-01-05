@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6664a1a3-b837-494e-9f0c-04368c14b365++1525",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "6664a1a3-b837-494e-9f0c-04368c14b365++1525" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6664a1a3-b837-494e-9f0c-04368c14b365++1525" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0847E9CB-9DC1-4F32-914F-0E6B3FABD34F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6664a1a3-b837-494e-9f0c-04368c14b365++1525" : "Sprocket\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Corner",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Code\/Corner\/Corner.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.0.22\/svn\/team2\/outsourcing",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6664a1a3-b837-494e-9f0c-04368c14b365++1525"
+    }
+  ]
+}

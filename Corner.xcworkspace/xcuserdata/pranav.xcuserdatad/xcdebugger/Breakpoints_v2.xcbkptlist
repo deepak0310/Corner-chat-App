@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Corner/Models/Issue.swift"
+            timestampString = "536789061.288054"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
+            landmarkName = "create(message:shops:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Corner.Issue.create(message: Swift.String, shops: Swift.Optional&lt;Swift.Array&lt;Corner.Shop&gt;&gt;) -&gt; Swift.String"
+                  moduleName = "Corner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pranav/Downloads/Corner-master-2/Corner/Models/Issue.swift"
+                  timestampString = "536789061.816804"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "232"
+                  endingLineNumber = "232"
+                  offsetFromSymbolStart = "16600">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;, __ObjC.DatabaseReference) -&gt; () in static Corner.Issue.create(message: Swift.String, shops: Swift.Optional&lt;Swift.Array&lt;Corner.Shop&gt;&gt;) -&gt; Swift.String"
+                  moduleName = "Corner"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pranav/Downloads/Corner-master-2/Corner/Models/Issue.swift"
+                  timestampString = "536789061.831063"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "234"
+                  endingLineNumber = "234"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Corner/Models/Issue.swift"
+            timestampString = "536789061.28863"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
+            landmarkName = "create(message:shops:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Corner/ViewControllers/Customer/NewMessageViewController.swift"
+            timestampString = "536789061.288761"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "545"
+            endingLineNumber = "545"
+            landmarkName = "btnPostClicked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Corner/Models/Issue.swift"
+            timestampString = "536789061.289757"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
+            landmarkName = "create(message:shops:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Corner/ViewControllers/Customer/NewMessageViewController.swift"
+            timestampString = "536789061.289845"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "562"
+            endingLineNumber = "562"
+            landmarkName = "btnPostClicked(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

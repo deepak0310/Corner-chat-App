@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelShopTableViewCell" rowHeight="69" id="KGk-i7-Jjw" customClass="SelShopTableViewCell" customModule="Corner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle Check" translatesAutoresizingMaskIntoConstraints="NO" id="4im-S2-vv8">
+                        <rect key="frame" x="263" y="13.5" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Hez-Qs-Bj4"/>
+                            <constraint firstAttribute="width" constant="22" id="SiX-tz-Ep2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEY-94-DMJ">
+                        <rect key="frame" x="18" y="5" width="17" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohe-4w-YM1">
+                        <rect key="frame" x="18" y="38" width="287" height="16"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4im-S2-vv8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-10" id="4k7-VI-0iv"/>
+                    <constraint firstItem="Ohe-4w-YM1" firstAttribute="top" secondItem="cEY-94-DMJ" secondAttribute="bottom" constant="15" id="AXQ-Eg-nhp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4im-S2-vv8" secondAttribute="trailing" constant="19" id="OrH-QG-AES"/>
+                    <constraint firstItem="Ohe-4w-YM1" firstAttribute="leading" secondItem="cEY-94-DMJ" secondAttribute="leading" id="c3p-4Y-GPZ"/>
+                    <constraint firstAttribute="trailing" secondItem="Ohe-4w-YM1" secondAttribute="trailing" constant="15" id="gbB-Ho-wAx"/>
+                    <constraint firstItem="cEY-94-DMJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="jNg-W2-4vJ"/>
+                    <constraint firstItem="cEY-94-DMJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="mAV-Ld-niG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imgCheck" destination="4im-S2-vv8" id="U4V-S0-9gv"/>
+                <outlet property="lbl_address" destination="Ohe-4w-YM1" id="hmn-OV-Iqd"/>
+                <outlet property="nameLabel" destination="cEY-94-DMJ" id="S8V-qX-TSN"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="64.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Circle Check" width="22" height="22"/>
+    </resources>
+</document>

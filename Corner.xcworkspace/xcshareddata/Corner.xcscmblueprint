@@ -1,0 +1,72 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F66283E32D9DC680519C698D568DA5101518862C+++19E2A13",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "F66283E32D9DC680519C698D568DA5101518862C+++D08C42B" : {
+
+    },
+    "6664a1a3-b837-494e-9f0c-04368c14b365++9674+++2ADF283" : {
+
+    },
+    "F66283E32D9DC680519C698D568DA5101518862C+++68D86FA" : {
+
+    },
+    "6664a1a3-b837-494e-9f0c-04368c14b365++1525+++B9BECF6" : {
+
+    },
+    "6664a1a3-b837-494e-9f0c-04368c14b365++5080+++074FFE9" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6664a1a3-b837-494e-9f0c-04368c14b365++5080+++074FFE9" : 9223372036854775807,
+    "F66283E32D9DC680519C698D568DA5101518862C+++D08C42B" : 9223372036854775807,
+    "6664a1a3-b837-494e-9f0c-04368c14b365++9674+++2ADF283" : 9223372036854775807,
+    "F66283E32D9DC680519C698D568DA5101518862C+++68D86FA" : 9223372036854775807,
+    "6664a1a3-b837-494e-9f0c-04368c14b365++1525+++B9BECF6" : 9223372036854775807,
+    "F66283E32D9DC680519C698D568DA5101518862C+++19E2A13" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4B3C1974-EEF3-49C1-84DE-220A74A153DA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6664a1a3-b837-494e-9f0c-04368c14b365++5080+++074FFE9" : "bitbucket_iOS\/",
+    "F66283E32D9DC680519C698D568DA5101518862C+++D08C42B" : "bitbucket\/",
+    "6664a1a3-b837-494e-9f0c-04368c14b365++9674+++2ADF283" : "..",
+    "F66283E32D9DC680519C698D568DA5101518862C+++68D86FA" : "bitbucket\/",
+    "6664a1a3-b837-494e-9f0c-04368c14b365++1525+++B9BECF6" : "..",
+    "F66283E32D9DC680519C698D568DA5101518862C+++19E2A13" : "corner-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Corner",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Corner\/Corner.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/cornerchat\/ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6664a1a3-b837-494e-9f0c-04368c14b365++1525+++B9BECF6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/cornerchat\/ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6664a1a3-b837-494e-9f0c-04368c14b365++5080+++074FFE9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.0.22\/svn\/team2\/outsourcing",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6664a1a3-b837-494e-9f0c-04368c14b365++9674+++2ADF283"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/cornerchat\/ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F66283E32D9DC680519C698D568DA5101518862C+++19E2A13"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/cornerchat\/ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F66283E32D9DC680519C698D568DA5101518862C+++68D86FA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.0.22\/svn\/team2\/outsourcing",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F66283E32D9DC680519C698D568DA5101518862C+++D08C42B"
+    }
+  ]
+}

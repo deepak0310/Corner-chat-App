@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoleSelectionViewController" customModule="Corner" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCustomer" destination="oUK-uH-AQH" id="N4R-ch-QRj"/>
+                <outlet property="btnShop" destination="Br6-TH-Z9h" id="uxX-Gf-Ney"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_background" translatesAutoresizingMaskIntoConstraints="NO" id="FDx-1v-X9L">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICA-dr-AgF" userLabel="LogoView">
+                    <rect key="frame" x="47" y="139" width="281" height="184.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgCornerLogo" translatesAutoresizingMaskIntoConstraints="NO" id="57y-bu-snf">
+                            <rect key="frame" x="0.0" y="0.0" width="281" height="184.5"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="57y-bu-snf" firstAttribute="leading" secondItem="ICA-dr-AgF" secondAttribute="leading" id="FFt-gk-psU"/>
+                        <constraint firstAttribute="width" secondItem="ICA-dr-AgF" secondAttribute="height" multiplier="288:189" id="Itp-io-Phh"/>
+                        <constraint firstAttribute="trailing" secondItem="57y-bu-snf" secondAttribute="trailing" id="SOl-z1-w8G"/>
+                        <constraint firstItem="57y-bu-snf" firstAttribute="top" secondItem="ICA-dr-AgF" secondAttribute="top" id="hR4-yI-vnq"/>
+                        <constraint firstAttribute="bottom" secondItem="57y-bu-snf" secondAttribute="bottom" id="xni-b7-FGN"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUK-uH-AQH">
+                    <rect key="frame" x="35" y="468" width="305" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="0nu-M7-LNR"/>
+                    </constraints>
+                    <state key="normal" title="I'm a customer"/>
+                    <connections>
+                        <action selector="btnCustomerClicked:" destination="-1" eventType="touchUpInside" id="D57-dP-IzH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Br6-TH-Z9h">
+                    <rect key="frame" x="35" y="550" width="305" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Jhv-mr-6dc"/>
+                    </constraints>
+                    <state key="normal" title="I'm a shop"/>
+                    <connections>
+                        <action selector="btnShopperClicked:" destination="-1" eventType="touchUpInside" id="fVo-wI-teK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Br6-TH-Z9h" secondAttribute="bottom" constant="67" id="59k-ja-g27"/>
+                <constraint firstAttribute="bottom" secondItem="FDx-1v-X9L" secondAttribute="bottom" id="9Va-rY-yot"/>
+                <constraint firstItem="FDx-1v-X9L" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9n7-We-5E3"/>
+                <constraint firstAttribute="trailing" secondItem="FDx-1v-X9L" secondAttribute="trailing" id="Frx-aE-2KE"/>
+                <constraint firstItem="Br6-TH-Z9h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="NxY-2z-aDS"/>
+                <constraint firstItem="oUK-uH-AQH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QL7-W7-gxA"/>
+                <constraint firstItem="Br6-TH-Z9h" firstAttribute="top" secondItem="oUK-uH-AQH" secondAttribute="bottom" constant="32" id="Tki-ev-mY7"/>
+                <constraint firstItem="ICA-dr-AgF" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-10" id="X0q-0Q-L8L"/>
+                <constraint firstItem="ICA-dr-AgF" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.75" id="ady-IX-hcB"/>
+                <constraint firstItem="ICA-dr-AgF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cBM-2r-Y6B"/>
+                <constraint firstItem="oUK-uH-AQH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="eb6-Ra-jTh"/>
+                <constraint firstItem="Br6-TH-Z9h" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="t0N-qK-va6"/>
+                <constraint firstItem="FDx-1v-X9L" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yYE-Rq-Sdk"/>
+            </constraints>
+            <point key="canvasLocation" x="-304.5" y="14.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgCornerLogo" width="288" height="189"/>
+        <image name="splash_background" width="1500" height="1500"/>
+    </resources>
+</document>

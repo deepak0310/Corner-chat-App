@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="454" id="KGk-i7-Jjw" customClass="MessageDetailImageTableViewCell" customModule="Corner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="502"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="501.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IjY-ft-0uU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="IjY-ft-0uU" secondAttribute="height" multiplier="1:1" id="zh8-vP-xuq"/>
+                        </constraints>
+                    </scrollView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Hj3-RD-3ll">
+                        <rect key="frame" x="168" y="338" width="39" height="37"/>
+                        <color key="tintColor" red="0.56078431370000004" green="0.5568627451" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </pageControl>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ge-FS-M0e">
+                        <rect key="frame" x="18" y="393" width="339" height="90.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b5w-in-Pm9">
+                        <rect key="frame" x="0.0" y="-18" width="375" height="393"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7Ge-FS-M0e" secondAttribute="trailing" constant="18" id="0NT-hV-c04"/>
+                    <constraint firstItem="Hj3-RD-3ll" firstAttribute="bottom" secondItem="IjY-ft-0uU" secondAttribute="bottom" id="1cg-Qi-Hp1"/>
+                    <constraint firstAttribute="bottom" secondItem="7Ge-FS-M0e" secondAttribute="bottom" constant="18" id="5wc-Sd-ICz"/>
+                    <constraint firstItem="IjY-ft-0uU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6r9-ap-2fZ"/>
+                    <constraint firstAttribute="trailing" secondItem="IjY-ft-0uU" secondAttribute="trailing" id="9Md-l6-HAM"/>
+                    <constraint firstItem="IjY-ft-0uU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JOF-MI-DLU"/>
+                    <constraint firstItem="b5w-in-Pm9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="-18" id="PSY-9C-GKB"/>
+                    <constraint firstItem="7Ge-FS-M0e" firstAttribute="top" secondItem="Hj3-RD-3ll" secondAttribute="bottom" constant="18" id="Pyb-9x-ufU"/>
+                    <constraint firstItem="7Ge-FS-M0e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="VBw-4b-G1q"/>
+                    <constraint firstItem="Hj3-RD-3ll" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="gfC-If-HeG"/>
+                    <constraint firstItem="b5w-in-Pm9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nZU-6e-JIX"/>
+                    <constraint firstAttribute="trailing" secondItem="b5w-in-Pm9" secondAttribute="trailing" id="sHB-Zb-HF1"/>
+                    <constraint firstItem="7Ge-FS-M0e" firstAttribute="top" secondItem="b5w-in-Pm9" secondAttribute="bottom" constant="18" id="wzo-Bd-Jv2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstImageView" destination="b5w-in-Pm9" id="zzL-kv-0DB"/>
+                <outlet property="pgeCtrl" destination="Hj3-RD-3ll" id="aFf-qY-RdM"/>
+                <outlet property="scrView" destination="IjY-ft-0uU" id="0qD-tT-Ycy"/>
+                <outlet property="txtView" destination="7Ge-FS-M0e" id="zWw-0h-eIR"/>
+            </connections>
+            <point key="canvasLocation" x="153" y="45"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_background" translatesAutoresizingMaskIntoConstraints="NO" id="e4t-bO-fHM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5b-Ei-lyC">
+                                <rect key="frame" x="46.5" y="139.5" width="281" height="184"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgCornerLogo" translatesAutoresizingMaskIntoConstraints="NO" id="lwH-GA-jpi">
+                                        <rect key="frame" x="0.0" y="0.0" width="281" height="184"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="u5b-Ei-lyC" secondAttribute="height" multiplier="288:189" id="2d0-0g-ID2"/>
+                                    <constraint firstAttribute="trailing" secondItem="lwH-GA-jpi" secondAttribute="trailing" id="Iza-na-bHQ"/>
+                                    <constraint firstItem="lwH-GA-jpi" firstAttribute="leading" secondItem="u5b-Ei-lyC" secondAttribute="leading" id="MiO-wN-kg5"/>
+                                    <constraint firstItem="lwH-GA-jpi" firstAttribute="top" secondItem="u5b-Ei-lyC" secondAttribute="top" id="ouz-Vn-t37"/>
+                                    <constraint firstAttribute="bottom" secondItem="lwH-GA-jpi" secondAttribute="bottom" id="r5R-Sr-9hb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="u5b-Ei-lyC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="AVM-HW-Pp9"/>
+                            <constraint firstItem="e4t-bO-fHM" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="JGa-tl-Hya"/>
+                            <constraint firstItem="e4t-bO-fHM" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Jby-HX-D2v"/>
+                            <constraint firstAttribute="trailing" secondItem="e4t-bO-fHM" secondAttribute="trailing" id="NtL-Jn-xzT"/>
+                            <constraint firstItem="u5b-Ei-lyC" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.75" id="w0Z-J8-UYD"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="e4t-bO-fHM" secondAttribute="bottom" id="wjn-Ex-kYN"/>
+                            <constraint firstItem="u5b-Ei-lyC" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-10" id="yBe-wd-eVg"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgCornerLogo" width="288" height="189"/>
+        <image name="splash_background" width="1500" height="1500"/>
+    </resources>
+</document>
