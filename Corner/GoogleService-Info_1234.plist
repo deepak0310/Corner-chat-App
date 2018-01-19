@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>368806217441-7qh3ne5iof2g9s8cec5atm4sbf1ffn9b.apps.googleusercontent.com</string>
+	<string>324000761317-i8sc2dg87qodouvvs09u8m7th00rrv1j.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.368806217441-7qh3ne5iof2g9s8cec5atm4sbf1ffn9b</string>
+	<string>com.googleusercontent.apps.324000761317-i8sc2dg87qodouvvs09u8m7th00rrv1j</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCqghl1DTqOfOyit4j_xg02FsfOcxVC0pk</string>
+	<string>AIzaSyDFJaYIpwdbN8REGxTQ5Cwt6JdNzoaxHbE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>368806217441</string>
+	<string>324000761317</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.cornerchat.cornerchat</string>
+	<string>com.cornerchat.corner</string>
 	<key>PROJECT_ID</key>
-	<string>corner-5a3a9</string>
+	<string>cornerchat-71c5f</string>
 	<key>STORAGE_BUCKET</key>
-	<string>corner-5a3a9.appspot.com</string>
+	<string>cornerchat-71c5f.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:368806217441:ios:6b146409c1083c12</string>
+	<string>1:324000761317:ios:379219e360c7d977</string>
 	<key>DATABASE_URL</key>
-	<string>https://corner-5a3a9.firebaseio.com</string>
+	<string>https://cornerchat-71c5f.firebaseio.com</string>
 </dict>
 </plist>

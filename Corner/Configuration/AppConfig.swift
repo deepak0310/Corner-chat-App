@@ -13,7 +13,7 @@ struct AppConfig {
 
 	static let apiHost 								= "https://bse-corner.herokuapp.com"
 //	static let apiHost 								= "http://127.0.0.1:3005"
-	static let firebaseURL						= "https://cornerchat-71c5f.firebaseio.com"
+    static let firebaseURL						= "https://corner-5a3a9.firebaseio.com/"
 	static let apiVersion 						= "v1"
 
 	private static let isTestFlight = Bundle.main.appStoreReceiptURL?.lastPathComponent == "sandboxReceipt"

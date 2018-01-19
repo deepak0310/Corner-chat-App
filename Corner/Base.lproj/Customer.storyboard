@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -264,6 +264,12 @@ Your messages get sent to multiple shops in Sydney with one click, helping you f
                                     </mapView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops we haven't made it to your area yet.  Find us on social @cornerchat and tag your local shop that you want to chat with." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Z2-Qi-ilA">
+                                <rect key="frame" x="20" y="303.5" width="335" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.97638517618179321" green="0.97652524709701538" blue="0.97635477781295776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -272,14 +278,19 @@ Your messages get sent to multiple shops in Sydney with one click, helping you f
                             <constraint firstItem="kLb-J7-JzB" firstAttribute="leading" secondItem="6p4-4r-GuD" secondAttribute="leading" id="NvP-gg-ije"/>
                             <constraint firstItem="GYX-k7-13f" firstAttribute="top" secondItem="wQI-nY-mSf" secondAttribute="bottom" id="TDb-XV-qJ0"/>
                             <constraint firstItem="kLb-J7-JzB" firstAttribute="top" secondItem="GYX-k7-13f" secondAttribute="bottom" id="acl-oO-f9z"/>
+                            <constraint firstItem="1Z2-Qi-ilA" firstAttribute="leading" secondItem="6p4-4r-GuD" secondAttribute="leading" constant="20" id="dLi-WH-rDz"/>
                             <constraint firstItem="maY-rY-ive" firstAttribute="leading" secondItem="6p4-4r-GuD" secondAttribute="leading" id="hfW-Tm-dEt"/>
                             <constraint firstItem="GYX-k7-13f" firstAttribute="leading" secondItem="6p4-4r-GuD" secondAttribute="leading" id="mRl-hg-m6h"/>
                             <constraint firstAttribute="trailing" secondItem="maY-rY-ive" secondAttribute="trailing" id="ofm-Vx-QF4"/>
                             <constraint firstAttribute="bottom" secondItem="kLb-J7-JzB" secondAttribute="bottom" id="qdE-5N-4Wc"/>
+                            <constraint firstAttribute="trailing" secondItem="1Z2-Qi-ilA" secondAttribute="trailing" constant="20" id="tpT-he-JGC"/>
+                            <constraint firstItem="1Z2-Qi-ilA" firstAttribute="centerY" secondItem="6p4-4r-GuD" secondAttribute="centerY" id="u6t-Mv-SIQ"/>
+                            <constraint firstItem="1Z2-Qi-ilA" firstAttribute="centerX" secondItem="6p4-4r-GuD" secondAttribute="centerX" id="yTQ-en-pPC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Shops" id="Pgh-9c-nXt"/>
                     <connections>
+                        <outlet property="lbl_noRecordFound" destination="1Z2-Qi-ilA" id="6GR-zb-V4Q"/>
                         <outlet property="mapView" destination="S4Y-1Y-di2" id="bvh-sc-h7r"/>
                         <outlet property="segCtrl" destination="Zqq-I2-G9z" id="MRf-Y7-zKW"/>
                         <outlet property="tableView" destination="wJQ-Rn-8di" id="RSt-cB-EZj"/>
@@ -751,17 +762,28 @@ Your messages get sent to multiple shops in Sydney with one click, helping you f
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.92156862745098034" green="0.91764705882352937" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops we haven't made it to your area yet.  Find us on social @cornerchat and tag your local shop that you want to chat with." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhv-95-uuZ">
+                                <rect key="frame" x="20" y="303" width="335" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.97638517619999998" green="0.97652524709999999" blue="0.97635477780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sO8-mB-CCO" firstAttribute="top" secondItem="M5z-tt-FOB" secondAttribute="bottom" id="49g-ee-SKg"/>
                             <constraint firstAttribute="trailing" secondItem="M5z-tt-FOB" secondAttribute="trailing" id="F9v-ib-edr"/>
+                            <constraint firstAttribute="trailing" secondItem="Vhv-95-uuZ" secondAttribute="trailing" constant="20" id="Rn4-eH-eOQ"/>
                             <constraint firstItem="M5z-tt-FOB" firstAttribute="leading" secondItem="Cgo-uY-tyI" secondAttribute="leading" id="Uzg-Qo-0rx"/>
                             <constraint firstItem="M5z-tt-FOB" firstAttribute="top" secondItem="UFY-rs-5gM" secondAttribute="bottom" id="aGv-tM-fcy"/>
+                            <constraint firstItem="Vhv-95-uuZ" firstAttribute="centerX" secondItem="Cgo-uY-tyI" secondAttribute="centerX" id="cus-qs-gSy"/>
+                            <constraint firstItem="Vhv-95-uuZ" firstAttribute="centerY" secondItem="Cgo-uY-tyI" secondAttribute="centerY" id="nLO-3E-ig8"/>
+                            <constraint firstItem="Vhv-95-uuZ" firstAttribute="leading" secondItem="Cgo-uY-tyI" secondAttribute="leading" constant="20" id="pzP-DR-NEO"/>
                         </constraints>
                     </view>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="lbl_noRecordFound" destination="Vhv-95-uuZ" id="ZoX-l2-8ec"/>
                         <outlet property="tableView" destination="M5z-tt-FOB" id="PUG-dp-k8f"/>
                     </connections>
                 </viewController>
@@ -868,7 +890,7 @@ Your messages get sent to multiple shops in Sydney with one click, helping you f
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHm-SC-TUu">
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHm-SC-TUu">
                                                 <rect key="frame" x="18" y="318.5" width="165" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -884,7 +906,7 @@ Your messages get sent to multiple shops in Sydney with one click, helping you f
                                                     <action selector="facebookLoginButtonTapped:" destination="YF6-Jb-fx1" eventType="touchUpInside" id="r7y-GP-Tx4"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q86-wC-3aj" userLabel="Sign-up with Facebook">
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q86-wC-3aj" userLabel="Sign-up with Facebook">
                                                 <rect key="frame" x="193" y="318.5" width="165" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -907,14 +929,14 @@ Your messages get sent to multiple shops in Sydney with one click, helping you f
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUB-aV-Pkl" userLabel="TextFileds View">
-                                                <rect key="frame" x="0.0" y="424.5" width="375" height="134"/>
+                                                <rect key="frame" x="0.0" y="424.5" width="375" height="90"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CRV-c7-h8Z">
+                                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CRV-c7-h8Z">
                                                         <rect key="frame" x="18" y="41" width="358" height="1"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </view>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Deepak Reddy Yarradoddi" placeholder="Full Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7mn-qN-qoj">
+                                                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7mn-qN-qoj">
                                                         <rect key="frame" x="18" y="15" width="339" height="25"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
@@ -930,8 +952,8 @@ Your messages get sent to multiple shops in Sydney with one click, helping you f
                                                             <constraint firstAttribute="height" constant="1" id="sDL-Dj-lmb"/>
                                                         </constraints>
                                                     </view>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="deepurockzzz0310@gmail.com" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VTP-7e-tOW">
-                                                        <rect key="frame" x="18" y="60" width="339" height="25"/>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VTP-7e-tOW">
+                                                        <rect key="frame" x="18" y="15" width="339" height="25"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
@@ -940,14 +962,14 @@ Your messages get sent to multiple shops in Sydney with one click, helping you f
                                                         </connections>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ht-CN-bQr" userLabel="Space View">
-                                                        <rect key="frame" x="18" y="89" width="357" height="1"/>
+                                                        <rect key="frame" x="18" y="44" width="357" height="1"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="fUA-iI-Yf3"/>
                                                         </constraints>
                                                     </view>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="iluv4mydad" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="teM-JO-Uq3">
-                                                        <rect key="frame" x="18" y="105" width="339" height="25"/>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="teM-JO-Uq3">
+                                                        <rect key="frame" x="18" y="60" width="339" height="25"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -956,7 +978,7 @@ Your messages get sent to multiple shops in Sydney with one click, helping you f
                                                         </connections>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWR-9e-p1D" userLabel="Space View">
-                                                        <rect key="frame" x="18" y="134" width="357" height="1"/>
+                                                        <rect key="frame" x="18" y="89" width="357" height="1"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="lFi-g1-dii"/>
@@ -965,8 +987,8 @@ Your messages get sent to multiple shops in Sydney with one click, helping you f
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="VTP-7e-tOW" firstAttribute="top" secondItem="Ge8-K4-R8A" secondAttribute="bottom" constant="15" id="0Mg-j4-d9u"/>
                                                     <constraint firstItem="VTP-7e-tOW" firstAttribute="leading" secondItem="bUB-aV-Pkl" secondAttribute="leading" constant="18" id="6SD-bE-DP5"/>
+                                                    <constraint firstItem="VTP-7e-tOW" firstAttribute="top" secondItem="bUB-aV-Pkl" secondAttribute="top" constant="15" id="Ef2-aN-3k2"/>
                                                     <constraint firstItem="7mn-qN-qoj" firstAttribute="top" secondItem="bUB-aV-Pkl" secondAttribute="top" constant="15" id="IcH-Pz-Cp6"/>
                                                     <constraint firstAttribute="trailing" secondItem="0ht-CN-bQr" secondAttribute="trailing" id="Icd-DU-9vk"/>
                                                     <constraint firstItem="Ge8-K4-R8A" firstAttribute="top" secondItem="7mn-qN-qoj" secondAttribute="bottom" constant="4" id="OVW-iK-hAa"/>
@@ -976,7 +998,7 @@ Your messages get sent to multiple shops in Sydney with one click, helping you f
                                                     <constraint firstItem="teM-JO-Uq3" firstAttribute="top" secondItem="0ht-CN-bQr" secondAttribute="bottom" constant="15" id="ZBk-vJ-gBh"/>
                                                     <constraint firstItem="Ge8-K4-R8A" firstAttribute="leading" secondItem="bUB-aV-Pkl" secondAttribute="leading" constant="18" id="c5T-MM-Mf7"/>
                                                     <constraint firstAttribute="trailing" secondItem="iWR-9e-p1D" secondAttribute="trailing" id="erj-Mg-q9i"/>
-                                                    <constraint firstAttribute="height" constant="134" id="ibI-Sq-s8y"/>
+                                                    <constraint firstAttribute="height" constant="90" id="ibI-Sq-s8y"/>
                                                     <constraint firstAttribute="trailing" secondItem="Ge8-K4-R8A" secondAttribute="trailing" id="kCU-p2-Kqy"/>
                                                     <constraint firstItem="iWR-9e-p1D" firstAttribute="leading" secondItem="bUB-aV-Pkl" secondAttribute="leading" constant="18" id="kEc-5B-gha"/>
                                                     <constraint firstAttribute="trailing" secondItem="teM-JO-Uq3" secondAttribute="trailing" constant="18" id="kzz-EM-zKO"/>
@@ -1252,11 +1274,11 @@ Your messages get sent to multiple shops in Sydney with one click, helping you f
             </objects>
             <point key="canvasLocation" x="2885.5999999999999" y="-1429.8350824587708"/>
         </scene>
-        <!--NEW-->
+        <!--NEW MESSAGE-->
         <scene sceneID="ihd-Qs-l3w">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fZZ-cV-8Rs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="NEW" image="icn_tab_new" selectedImage="icn_tab_new" id="DM0-vv-ioO"/>
+                    <tabBarItem key="tabBarItem" title="NEW MESSAGE" image="icn_tab_new" selectedImage="icn_tab_new" id="DM0-vv-ioO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eBq-x8-T3C">
                         <autoresizingMask key="autoresizingMask"/>

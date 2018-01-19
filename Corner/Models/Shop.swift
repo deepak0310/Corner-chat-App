@@ -100,9 +100,12 @@ class Shop: Mappable {
                             SHop.lat = "\(location.coordinate.latitude)"
                             SHop.long = "\(location.coordinate.longitude)"
                             
+                            print("--------------------------")
+                            print("\(counter) counter value \(SHop.name)")
+                            print("--------------------------")
+                            
                             if counter == DataManager.shared.shops.count
                             {
-                                print("\(counter) counter value")
                                  NotificationCenter.default.post(name: .gotShops, object: nil)
                             }
                             

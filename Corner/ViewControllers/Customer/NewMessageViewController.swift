@@ -321,7 +321,7 @@ class NewMessageViewController: AppViewController,CLLocationManagerDelegate {
                 
                 let distanceInMeters = coordinate₀.distance(from: coordinate₁) // result is in meters
                 
-//                                if distanceInMeters > 40233.6
+//                               if distanceInMeters > 40233.6
 //                                {
 //
 //                                }else
@@ -475,13 +475,13 @@ extension NewMessageViewController {
             lblTitle.attributedText = mutableString
             lblTitle.sizeToFit()
             
-            self.navigationController?.title = ""
+            self.navigationController?.title = "NEW MESSAGE"
             self.navigationController?.navigationItem.titleView = lblTitle
             
             // Hide SelectShop
             
         } else {
-            self.navigationController?.title = "New Message"
+            self.navigationController?.title = "NEW MESSAGE"
             self.navigationController?.navigationItem.titleView = nil
         }
     }

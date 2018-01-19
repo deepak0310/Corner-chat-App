@@ -111,19 +111,19 @@ extension CustomerSignupViewController {
         let title = "Error"
         var message = ""
         
-        if txtFullName.text!.isEmpty
-        {
-            errors = true
-            message += "Full Name empty"
-            showAlertWithTitle(title, message: message, toFocus:txtFullName)
-        }
+//        if txtFullName.text!.isEmpty
+//        {
+//            errors = true
+//            message += "Full Name empty"
+//            showAlertWithTitle(title, message: message, toFocus:txtFullName)
+//        }
             //        else if !txtFullName.text!.isValidName()
             //        {
             //            errors = true
             //            message += "Invalid Full Name"
             //            showAlertWithTitle(title, message: message, toFocus:txtFullName)
             //        }
-        else if txtEmail.text!.isEmpty
+         if txtEmail.text!.isEmpty
         {
             errors = true
             message += "Email empty"
@@ -242,9 +242,11 @@ extension CustomerSignupViewController {
     @IBAction func btnDoneClicked(_ sender: UIButton) {
         
         if checkForErrors() { return }
-        guard let fullNameArray = self.txtFullName.text?.components(separatedBy: " "), fullNameArray.count > 1 else { promptForFullName(); return }
+        
+//        guard let fullNameArray = self.txtFullName.text?.components(separatedBy: " "), fullNameArray.count > 1 else { promptForFullName(); return }
+        
         UIApplication.shared.beginIgnoringInteractionEvents()
-        User.signup(email: self.txtEmail.text!, password: self.txtPassword.text!, firstName: fullNameArray[0], lastName: fullNameArray[1]) { (user, error, json) in
+        User.signup(email: self.txtEmail.text!, password: self.txtPassword.text!, firstName: "", lastName: "") { (user, error, json) in
             UIApplication.shared.endIgnoringInteractionEvents()
             
             if let err = json?["errors"], user == nil {
@@ -265,7 +267,7 @@ extension CustomerSignupViewController {
     
     @IBAction func txtValueChanged(_ sender: UITextField) {
         
-        if txtFullName.text!.isEmpty || txtEmail.text!.isEmpty || txtPassword.text!.isEmpty {
+        if  txtEmail.text!.isEmpty || txtPassword.text!.isEmpty {
             
             setDoneButtonDisable()
             

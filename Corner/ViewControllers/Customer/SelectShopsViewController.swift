@@ -12,7 +12,8 @@ import MapKit
 
 class SelectShopsViewController: AppViewController,CLLocationManagerDelegate
 {
-
+    @IBOutlet weak var lbl_noRecordFound: UILabel!
+    
 	@IBOutlet weak var tableView:	UITableView!
 
     @IBOutlet weak var segment_listMap: UISegmentedControl!
@@ -42,17 +43,10 @@ class SelectShopsViewController: AppViewController,CLLocationManagerDelegate
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-        
-        
-       
-        
-        
-        
+        lbl_noRecordFound.text = "Oops we haven't made it to your area yet.  Find us on social @cornerchat and tag your local shop that you want to chat with.";
         
         array_selectedCell = shopsChecked.filter{ $0 == true }
 
-        
-        
 		let nibSwitchCell = UINib(nibName: "SwitchTableViewCell", bundle: nil)
 		let nibSelShopCell = UINib(nibName: "SelShopTableViewCell", bundle: nil)
 
@@ -62,9 +56,6 @@ class SelectShopsViewController: AppViewController,CLLocationManagerDelegate
         tableView.delegate = self
 		tableView.dataSource = self
 
-        
-
-        
         
         tableView.reloadData()
         tableView.tableFooterView = UIView.init()
@@ -120,7 +111,7 @@ extension SelectShopsViewController {
 			let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdOfShopCell, for: indexPath) as! SelShopTableViewCell
 
 			cell.nameLabel.text = shops[indexPath.row ].name
-        cell.lbl_address.text = shops[indexPath.row ].street + ", " + shops[indexPath.row ].city + (NSString(format:"(%.2f", shops[indexPath.row ].distance) as String) + " miles away)"
+        cell.lbl_address.text = shops[indexPath.row ].street + ", " + shops[indexPath.row ].city + (NSString(format:"(%.2f", (shops[indexPath.row ].distance)/1609.34) as String) + " miles/" + (NSString(format:"%.2f", (shops[indexPath.row ].distance)/1000) as String) + " km)"
 //        cell.nameLabel.text = shop.name
 //        cell.streetLabel.text = shop.street
 //        cell.cityLabel.text = shop.city
@@ -159,7 +150,21 @@ extension SelectShopsViewController {
 extension SelectShopsViewController: UITableViewDelegate, UITableViewDataSource {
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return shops.count
+        
+        if shops.count == 0
+        {
+            lbl_noRecordFound.isHidden = false;
+
+            return shops.count
+
+        }else
+        {
+            lbl_noRecordFound.isHidden = true;
+
+            return shops.count
+
+        }
+        
 	}
 
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

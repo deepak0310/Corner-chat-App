@@ -115,6 +115,8 @@ class ChatDetailVC: SLKTextViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         title = conversation!.shopName
+        textInputbar.subviews.last?.removeFromSuperview()
+
     }
     
     override func viewWillDisappear(_ animated: Bool) {

@@ -11,11 +11,13 @@ import MapKit
 
 class ShopsViewController: AppViewController,CLLocationManagerDelegate {
     
+    @IBOutlet weak var lbl_noRecordFound: UILabel!
     @IBOutlet weak var tableView:        UITableView!
     @IBOutlet weak var segCtrl:            UISegmentedControl!
     @IBOutlet weak var viewSpaceHeight: NSLayoutConstraint!
     
-    fileprivate var shops = [Shop]()
+    public var shops1 =        DataManager.shared.shops
+    public var shops =        [Shop]()
     let locationManager = CLLocationManager()
     
     fileprivate var filteredShops = [Shop]()
@@ -25,6 +27,8 @@ class ShopsViewController: AppViewController,CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lbl_noRecordFound.text = "Oops we haven't made it to your area yet.  Find us on social @cornerchat and tag your local shop that you want to chat with.";
         
         // Ask for Authorisation from the User.
         self.locationManager.requestAlwaysAuthorization()
@@ -41,8 +45,10 @@ class ShopsViewController: AppViewController,CLLocationManagerDelegate {
             //            self.showAlert("", message: "Please enable your location service from setting.")
         }
         
-        segCtrl.tintColor = Color.AppGreen
+
         
+        segCtrl.tintColor = Color.AppGreen
+        mapView.showsUserLocation = true
         viewSpaceHeight.constant = 0.5
         
         let nib = UINib(nibName: "ShopTableViewCell", bundle: nil)
@@ -73,12 +79,12 @@ extension ShopsViewController {
     
     fileprivate func loadAllShops() {
         
-        shops = DataManager.shared.shops
-        filteredShops = shops
+//        shops = DataManager.shared.shops
         
+         shops1 =        DataManager.shared.shops
+
         
-        
-        for SHOP in shops
+        for SHOP in shops1
         {
             
             let annotation = MKPointAnnotation()
@@ -97,14 +103,51 @@ extension ShopsViewController {
             
             
         }
+        shops.removeAll()
+        for SHOP in shops1
+        {
+            
+            
+            if SHOP.name == "Happy Wheels"
+            {
+                print("Happy Wheels lat long : \(SHOP.lat)")
+            }
+            
+            if SHOP.lat == ""
+            {
+            }else
+            {
+                let coordinate₀ = CLLocation(latitude: Double(SHOP.lat)!, longitude: Double(SHOP.long)!)
+                let coordinate₁ = CLLocation(latitude: (locationManager.location?.coordinate.latitude)!, longitude: (locationManager.location?.coordinate.longitude)!)
+                
+                
+                let distanceInMeters = coordinate₀.distance(from: coordinate₁) // result is in meters
         
-        print(locationManager.location?.coordinate.longitude)
+//                if distanceInMeters > 40233.6
+//                {
+//
+//                }else
+//                {
+                    shops.append(SHOP)
+                    SHOP.distance = distanceInMeters
+//                }
+            }
+            
+            
+            
+        }
         
+        //Ghost Lines
+        let sortedArray=shops.sorted { (obj1, obj2) -> Bool in
+            return obj1.distance < obj2.distance
+        }
+
+        shops = sortedArray;
         
+        DataManager.shared.shops = shops;
         
-        
-        
-        
+        filteredShops = shops
+
         tableView.reloadData()
     }
     
@@ -137,10 +180,14 @@ extension ShopsViewController {
         let shop = filteredShops[indexPath.row]
         cell.nameLabel.text = shop.name
         cell.streetLabel.text = shop.street
-        cell.cityLabel.text = shop.city
+        cell.cityLabel.text = shop.city + (NSString(format:"(%.2f", (shop.distance)/1609.34) as String) + " miles/" + (NSString(format:"%.2f", (shops[indexPath.row ].distance)/1000) as String) + " km)"
+        
+       
+
+        
         cell.favedImage.image = shop.favorited ? #imageLiteral(resourceName: "icn_shopslist_favorite_active") : #imageLiteral(resourceName: "icn_shopslist_favorite_inactive")
         //        cell.blockedImage.image = shop.blocked ? #imageLiteral(resourceName: "icn_shopslist_block_active"): #imageLiteral(resourceName: "icn_shopslist_block")
-        cell.imgAvatar.image = shop.employee.oid == "5c43b67a580c2a7572594b60dd6560ee1d59b8fd" ? UIImage(named: "default-shop-icon") : UIImage(named: "default-icon")
+        cell.imgAvatar.image =  UIImage(named: shop.oid)
         
         // Button Click
         cell.contactButton.tag = indexPath.row * 3
@@ -300,7 +347,7 @@ extension ShopsViewController {
             let indexOfAppShops = shops.index {$0.oid == filteredShops[index].oid}
             filteredShop.unfave() { (shop, error, json) in
                 if let shop = shop {
-                    DataManager.shared.shops[indexOfAppShops!] = shop
+                    DataManager.shared.shops[indexOfAppShops!] = self.filteredShops[index]
                 }
             }
             
@@ -310,7 +357,7 @@ extension ShopsViewController {
             let indexOfAppShops = shops.index {$0.oid == filteredShops[index].oid}
             filteredShop.fave() { (shop, error, json) in
                 if let shop = shop {
-                    DataManager.shared.shops[indexOfAppShops!] = shop
+                    DataManager.shared.shops[indexOfAppShops!] = self.filteredShops[index]
                     
                     DispatchQueue.main.async {
                         self.showAlert(shop.name + " added to Favorites.", message: "")
@@ -331,7 +378,28 @@ extension ShopsViewController {
 extension ShopsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filteredShops.count
+        if segCtrl.selectedSegmentIndex == 0 {
+            if filteredShops.count == 0
+            {
+                lbl_noRecordFound.isHidden = false;
+                
+                return filteredShops.count
+                
+            }else
+            {
+                lbl_noRecordFound.isHidden = true;
+                
+                return filteredShops.count
+                
+            }
+        }else
+        {
+            lbl_noRecordFound.isHidden = true;
+
+             return filteredShops.count
+        }
+        
+       
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

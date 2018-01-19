@@ -33,7 +33,9 @@
 		0CB966871E9824DB00DD93D7 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB966861E9824DB00DD93D7 /* Conversation.swift */; };
 		0CFBCAF01E8786CA00BFAC88 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFBCAEF1E8786CA00BFAC88 /* Shop.swift */; };
 		0CFBCAF41E8952E300BFAC88 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFBCAF31E8952E300BFAC88 /* DataManager.swift */; };
-		8419B2881FEDA05F00572BD6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8419B2871FEDA05F00572BD6 /* GoogleService-Info.plist */; };
+		8419B2881FEDA05F00572BD6 /* GoogleService-Info_1234.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8419B2871FEDA05F00572BD6 /* GoogleService-Info_1234.plist */; };
+		841CAA6D2004AD120014CEFC /* GoogleService-Info_12.plist in Resources */ = {isa = PBXBuildFile; fileRef = 841CAA6C2004AD120014CEFC /* GoogleService-Info_12.plist */; };
+		841CAA6F20094DC50014CEFC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 841CAA6E20094DC40014CEFC /* GoogleService-Info.plist */; };
 		87039C491E59890E00327A42 /* StoreSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87039C481E59890E00327A42 /* StoreSignInViewController.swift */; };
 		87123C041E389F11006BB8A2 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87123C031E389F11006BB8A2 /* NewMessageViewController.swift */; };
 		87123C061E391C7D006BB8A2 /* SelectShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87123C051E391C7D006BB8A2 /* SelectShopsViewController.swift */; };
@@ -150,7 +152,9 @@
 		0CFBCAF31E8952E300BFAC88 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		429A4B491E9ED01419948AFC /* Pods-Corner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Corner/Pods-Corner.release.xcconfig"; sourceTree = "<group>"; };
 		785B37BC1F2E29F199F090ED /* Pods_Corner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Corner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8419B2871FEDA05F00572BD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8419B2871FEDA05F00572BD6 /* GoogleService-Info_1234.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info_1234.plist"; sourceTree = "<group>"; };
+		841CAA6C2004AD120014CEFC /* GoogleService-Info_12.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info_12.plist"; sourceTree = "<group>"; };
+		841CAA6E20094DC40014CEFC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		87039C481E59890E00327A42 /* StoreSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoreSignInViewController.swift; path = ViewControllers/Store/StoreSignInViewController.swift; sourceTree = "<group>"; };
 		87123C031E389F11006BB8A2 /* NewMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewMessageViewController.swift; path = ViewControllers/Customer/NewMessageViewController.swift; sourceTree = "<group>"; };
 		87123C051E391C7D006BB8A2 /* SelectShopsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectShopsViewController.swift; path = ViewControllers/Customer/SelectShopsViewController.swift; sourceTree = "<group>"; };
@@ -417,8 +421,10 @@
 		87AFF1491E373BCC008EAF10 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				841CAA6E20094DC40014CEFC /* GoogleService-Info.plist */,
+				841CAA6C2004AD120014CEFC /* GoogleService-Info_12.plist */,
 				87AFF1411E373B1D008EAF10 /* Info.plist */,
-				8419B2871FEDA05F00572BD6 /* GoogleService-Info.plist */,
+				8419B2871FEDA05F00572BD6 /* GoogleService-Info_1234.plist */,
 				87AFF1391E373B1D008EAF10 /* Customer.storyboard */,
 				87AFF16B1E375B8D008EAF10 /* Shop.storyboard */,
 				87AFF13E1E373B1D008EAF10 /* LaunchScreen.storyboard */,
@@ -626,7 +632,7 @@
 				TargetAttributes = {
 					87AFF1311E373B1C008EAF10 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 52QXUULLEN;
+						DevelopmentTeam = UES646RFKF;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
@@ -672,6 +678,7 @@
 				87AFF16D1E375B8D008EAF10 /* Shop.storyboard in Resources */,
 				872C85201E4033B50081522F /* StoreSettingInfoTableViewCell.xib in Resources */,
 				87123C101E39240D006BB8A2 /* SelShopTableViewCell.xib in Resources */,
+				841CAA6F20094DC50014CEFC /* GoogleService-Info.plist in Resources */,
 				87AFF13D1E373B1D008EAF10 /* Assets.xcassets in Resources */,
 				87AFF13B1E373B1D008EAF10 /* Customer.storyboard in Resources */,
 				0C250C651E9BD90700868FD3 /* Settings.bundle in Resources */,
@@ -680,9 +687,10 @@
 				87AFF1651E374E0C008EAF10 /* RoleSelectionViewController.xib in Resources */,
 				871280111E3A6B4A00C1A76F /* LoginViewController.xib in Resources */,
 				87BBBDD51E37CFAE009AB4A3 /* ShopTableViewCell.xib in Resources */,
-				8419B2881FEDA05F00572BD6 /* GoogleService-Info.plist in Resources */,
+				8419B2881FEDA05F00572BD6 /* GoogleService-Info_1234.plist in Resources */,
 				0CA5B8941EB9C05B0030FAB6 /* ChatTextCell.xib in Resources */,
 				872C85251E40366D0081522F /* StoreSettingNotificationTableViewCell.xib in Resources */,
+				841CAA6D2004AD120014CEFC /* GoogleService-Info_12.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1041,13 +1049,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06C195FDD5E1D0DD276A01AD /* Pods-Corner.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Corner/Corner.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: CORNER CHAT PTY. LTD. (52QXUULLEN)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 52QXUULLEN;
+				DEVELOPMENT_TEAM = UES646RFKF;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1055,10 +1063,10 @@
 				);
 				INFOPLIST_FILE = Corner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cornerchat.corner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cornerchat.cornerchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e95603e0-1500-4da4-bcee-5f06dd9746c1";
-				PROVISIONING_PROFILE_SPECIFIER = "CornerChat_ Development";
+				PROVISIONING_PROFILE = "511df095-034c-4771-a3d5-db07cb522c63";
+				PROVISIONING_PROFILE_SPECIFIER = CornerChat_Development;
 				SWIFT_OBJC_BRIDGING_HEADER = "Corner/ViewControllers/Shared/Corner-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -1069,13 +1077,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 429A4B491E9ED01419948AFC /* Pods-Corner.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Corner/Corner.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: CORNER CHAT PTY. LTD. (52QXUULLEN)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 52QXUULLEN;
+				DEVELOPMENT_TEAM = UES646RFKF;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1083,10 +1091,10 @@
 				);
 				INFOPLIST_FILE = Corner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cornerchat.corner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cornerchat.cornerchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e95603e0-1500-4da4-bcee-5f06dd9746c1";
-				PROVISIONING_PROFILE_SPECIFIER = "CornerChat_ Development";
+				PROVISIONING_PROFILE = "511df095-034c-4771-a3d5-db07cb522c63";
+				PROVISIONING_PROFILE_SPECIFIER = CornerChat_Development;
 				SWIFT_OBJC_BRIDGING_HEADER = "Corner/ViewControllers/Shared/Corner-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
